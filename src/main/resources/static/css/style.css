@@ -1,0 +1,99 @@
+div {
+	width: 100%;
+}
+
+body{
+	background-color:rgb(255,255,255);
+	display:flex;
+	align-items:center;
+	justify-content:center
+	height: 100vh;
+	transition:0.5s background ease;
+}
+.section{
+	color: white;
+	transition: 0.5s;
+	width: 600px;
+	background-color: #000000341414;
+	padding: 60px;
+}
+
+.section h1{
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.section p{
+	color:green;
+}
+
+.light-color{
+	color: black;
+	background-color: #000000219219219;
+}
+
+.theme-switch{
+	color: white;
+	width: 70px;
+	height: 30px;
+	background: #28a745;
+	border-radius: 50px;
+	position: absolute;
+	top: 70px;
+	right: 70px;	 
+}
+
+.theme-switch .switch{
+	background-color: white;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	transition:0.5px all ease;
+}
+
+.light-theme{
+	background-color: #000;
+	color: black;	
+}
+
+.light-theme .theme-switch{
+	background: #28a745; 
+}
+
+.light-theme .theme-switch .switch{
+	transform: translateX(37px);
+}
+
+.bg {
+	/* The image used */
+	/*background-image: url("/css/giphy.gif");*/
+	/* Full height */
+	height: 100%;
+	width: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #ffffff
+	url('/css/load1.gif')
+	 no-repeat center center;	
+	z-index: 99999;
+}
+
+.content {display:none;}
+.preload { width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+	 no-repeat center center;}
